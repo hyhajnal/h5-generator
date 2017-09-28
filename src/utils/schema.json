@@ -1,0 +1,44 @@
+{
+  "modConfig": {
+    "baseInfo": {
+      "id": "mod_xxx",
+      "name": "一行多列",
+      "tag": "布局",
+      "preImg": "xx.jpg"
+    },
+    "attrConfig": {
+      "title": {
+        "title": "标题",
+        "type": "string",
+        "default": "一行两列"
+      },
+      "bgColor": {
+        "title": "背景颜色",
+        "type": "color",
+        "default": "#fff"
+      },
+      "isShow": {
+        "title": "是否显示",
+        "type": "select",
+        "default": "一行两列"
+      },
+      "bgImg": {
+        "title": "背景图片",
+        "type": "image",
+        "default": "一行两列"
+      },
+      "column": {
+        "title": "几列排",
+        "type": "number",
+        "default": "2"
+      }
+    },
+    "data": {
+      "title": "",
+      "bgColor": "",
+      "isShow": true,
+      "bgImg": "",
+      "column": 2
+    }
+  }
+}
