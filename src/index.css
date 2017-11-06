@@ -5,3 +5,8 @@ html, body, :global(#root) {
   margin: 0;
 }
 
+:global(.ant-tabs-bar) {
+  margin-bottom: 0 !important;
+}
+
+

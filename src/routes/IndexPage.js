@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import { Row, Col } from 'antd';
+import { Row, Col, Tabs } from 'antd';
 import styles from './IndexPage.less';
 
 import ModuleBox from '../components/module-box/ModuleBox';
@@ -8,16 +8,24 @@ import EditBox from '../components/edit-box/Editbox';
 import OperatorBar from '../components/operator-bar/OperatorBar';
 import AttrBox from '../components/attr-box/AttrBox';
 
+const TabPane = Tabs.TabPane;
+
 function IndexPage() {
   return (
     <div className={styles.contaner}>
       <Row>
-        <Col span={6} className={styles.module_box}><ModuleBox /></Col>
-        <Col span={18}>
+        <Col span={5} className={styles.module_box}><ModuleBox /></Col>
+        <Col span={13}>
           <Row className={styles.operator_bar}><OperatorBar /></Row>
-          <Row>
-            <Col span={16} className={styles.edit_box}><EditBox /></Col>
-            <Col span={8} className={styles.attr_box}><AttrBox /></Col>
+          <Row className={styles.edit_box}><EditBox /></Row>
+        </Col>
+        <Col span={6}>
+          <Row className={styles.attr_box} id="attr_tab">
+            <Tabs defaultActiveKey="4" onChange={() => {}} className={styles.attr_tab}>
+              <TabPane tab="属性" key="4"><AttrBox /></TabPane>
+              <TabPane tab="页面信息" key="5">组件</TabPane>
+              <TabPane tab="页面结构树" key="6">模块</TabPane>
+            </Tabs>
           </Row>
         </Col>
       </Row>

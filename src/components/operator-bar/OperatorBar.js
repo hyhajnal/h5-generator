@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Icon, Row, Col, Dropdown, Menu } from 'antd';
+import { Button, Icon, Row, Dropdown, Menu } from 'antd';
 
 const menu = (
   <Menu onClick={() => {}}>
@@ -13,31 +13,22 @@ const OperatorBar = () => {
   return (
     <div>
       <Row type="flex" justify="space-between" align="center">
-        <Col span={4}>
-          <Button type="primary" onClick={() => {}}>
-            <Icon type={1 > 0 ? 'menu-unfold' : 'menu-fold'} />
+        <Button type="primary" onClick={() => {}}>
+          <Icon type={1 > 0 ? 'menu-unfold' : 'menu-fold'} />
+        </Button>
+        <Dropdown overlay={menu}>
+          <Button>
+            100% <Icon type="down" />
           </Button>
-        </Col>
-        <Col span={4}>
-          <Dropdown overlay={menu}>
-            <Button>
-              100% <Icon type="down" />
-            </Button>
-          </Dropdown>
-        </Col>
-        <Col span={16}>
-          <Button.Group>
-            <Button type="primary">
-              新建页面
-            </Button>
-            <Button type="primary">
-              预览
-            </Button>
-            <Button type="primary">
-              发布
-            </Button>
-          </Button.Group>
-        </Col>
+        </Dropdown>
+        <Button.Group>
+          <Button type="primary">
+            锁定
+          </Button>
+          <Button type="primary">
+            预览
+          </Button>
+        </Button.Group>
       </Row>
     </div>
   );

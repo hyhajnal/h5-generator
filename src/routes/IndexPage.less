@@ -1,18 +1,22 @@
 
 .contaner {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 .operator_bar {
-  background: rgba(0,0,0,0.8);
   padding: 10px;
 }
 
 .module_box {
   height: 100vh;
-  background: rgba(0,0,0,0.8);
   overflow: auto;
+  position: relative;
 }
 
 .attr_box {
@@ -26,5 +30,9 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+:global(#attr_tab .ant-tabs-tab) {
+  line-height: 33px;
 }
 

@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "PORT=56094 roadhog server",
+    "start": "roadhog server",
     "build": "roadhog build",
     "lint": "eslint --ext .js src test",
     "precommit": "npm run lint"
@@ -10,12 +10,15 @@
     "install-node": "6.11.1"
   },
   "dependencies": {
+    "@shopify/draggable": "^1.0.0-beta",
     "antd": "^2.13.2",
     "antd-mobile": "^2.0.0-beta.2",
     "babel-runtime": "^6.9.2",
     "dva": "^2.0.3",
     "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+    "react-color": "^2.13.8",
+    "react-dom": "^15.4.0",
+    "sortablejs": "^1.6.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",

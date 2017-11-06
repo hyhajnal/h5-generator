@@ -1,0 +1,7 @@
+.wrap {
+  margin: 0 20px 20px 20px;
+}
+.row {
+  border-bottom: 1px solid #eee;
+  padding: 15px;
+}

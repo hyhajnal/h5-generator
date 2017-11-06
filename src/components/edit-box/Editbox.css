@@ -1,6 +1,23 @@
-.h5_page {
-  width: 375px;
-  height: 667px;
-  background: #fff;
+.page_wrap {
   border: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border: 5px solid #999;
+  border-radius: 5px;
+  background: #fff;
+  padding: 10px;
+}
+
+.page {
+  background: #fff;
+}
+
+.action_bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }

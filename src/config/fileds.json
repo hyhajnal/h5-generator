@@ -1,0 +1,13 @@
+{
+  "Flex": [{
+    "key": "",
+    "title": {
+      "value": "标题"
+    },
+    "value": {
+      "type": "string",
+      "editable": true,
+      "value": ""
+    }
+  }]
+}
