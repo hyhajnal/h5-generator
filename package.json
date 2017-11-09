@@ -17,8 +17,7 @@
     "dva": "^2.0.3",
     "react": "^15.4.0",
     "react-color": "^2.13.8",
-    "react-dom": "^15.4.0",
-    "sortablejs": "^1.6.1"
+    "react-dom": "^15.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",

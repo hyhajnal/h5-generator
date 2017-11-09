@@ -1,0 +1,13 @@
+.wrap {
+  padding: 0 10px 10px 10px;
+}
+
+.title {
+  font-weight: bold;
+  margin: 15px 0 10px 0;
+}
+
+.demoImage {
+  width: 100px;
+  height: 100px;
+}
